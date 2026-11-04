@@ -1,0 +1,20 @@
+
+========================================================================
+STEP 4 (TASK 2): PRODUCT DESIGN
+========================================================================
+Annual savings at P50 = 4600 kWh x Rs 5.75 = Rs 26450.00
+Index = annual surface solar radiation downwards (kWh/m2), mean of surrounding ERA5-Land cells
+20-year mean index        : 1943.0 kWh/m2
+Trigger (99% of mean)    : 1923.6 kWh/m2
+Exit (P5 of 20 years)      : 1893.7 kWh/m2 (97.5% of mean)
+Maximum payout            : Rs 2645.00 (10% of savings)
+Tick value                : Rs 88.5 per kWh/m2 shortfall  (= Rs 1718.9 per 1% of mean index)
+Years with payout > 0     : 7 of 20 | years at/below exit: 5%
+
+Over-compensation check (modelled loss = savings lost if generation falls with the index):
+  At the trigger the modelled loss is Rs 265; at the exit it is Rs 672; the maximum payout is Rs 2645.
+  Maximum payout is 3.9 x the modelled loss at the exit point.
+  (A smaller CAP_PCT_OF_SAVINGS in config.py lowers this ratio and the premium.)
+  saved figure: fig_task2_payout_curve.png
+
+Saved: outputs/product_spec.json, product_spec.md

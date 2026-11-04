@@ -1,0 +1,46 @@
+
+========================================================================
+STEP 6 (TASK 4): PRODUCT CRITIQUE ON 10,000 CUSTOMERS
+========================================================================
+Book: 10000 customers | premium Rs 1070 | premium pool Rs 1.07 crore | maximum exposure Rs 2.65 crore
+Material loss threshold: Rs 1322.50 (5% of annual savings)
+
+--- A. SPATIAL BASIS RISK ---
+Measured spread between the 4 ERA5-Land cells: 0.07% of the annual index (cells are ~11 km apart).
+       cell  mean_offset_vs_pooled_pct  mean_abs_payout_diff_rs  max_abs_payout_diff_rs  years_trigger_decision_differs
+23.1N_72.5E                       0.06                    19.11                   96.69                               0
+23.1N_72.6E                      -0.06                     6.95                   51.59                               0
+23.0N_72.5E                       0.06                     8.38                   59.93                               0
+23.0N_72.6E                      -0.06                    16.44                  101.77                               0
+Note: ERA5-Land cells are strongly correlated, so this understates rooftop-scale deviation.
+Rooftop-level deviation is therefore simulated (ASSUMPTION: std dev 2.0% of annual generation).
+
+Simulated result (base case, 2.0% local deviation):
+  Customer-years with a material weather loss that receive NO payout: 7.2%
+  Customer-years that receive a payout without a material loss      : 93.0%
+  On average 19 of 10000 customers per year are uncovered despite a material loss (worst year: 100).
+Sensitivity to the local deviation assumption:
+ sigma_pct  miss_rate_pct  false_payout_rate_pct  avg_customers_uncovered_per_year  worst_year_customers_uncovered  avg_customers_material_loss_per_year
+       1.0            0.0                   99.7                               0.0                               0                                  10.6
+       2.0            7.2                   93.0                              19.1                             100                                 264.4
+       3.0           24.5                   84.0                             182.0                             609                                 741.6
+       5.0           44.7                   72.6                             774.4                            1747                                1732.7
+
+--- B. NON-WEATHER LOSSES (inverter failure, soiling, shading, grid outage) ---
+Assumptions: 5% of customers per year hit; each loses 10-40% of annual generation.
+  Customers hit per year: 493 of 10000 | average loss per hit customer: Rs 6305
+  Total non-weather loss per year: Rs 0.31 crore = 0.3 x the whole premium pool (Rs 1.07 crore)
+  Non-weather events cause 52% of all customer savings shortfall; none of it is paid by this product.
+  Customer-years with a material loss and no payout rise from 7.2% (weather only) to 44.8% (with non-weather losses).
+
+--- C. CORRELATED (PORTFOLIO) EXPOSURE ---
+Premium pool Rs 1.07 crore vs maximum possible payout Rs 2.65 crore (2.5 x the pool).
+Worst historical year 2019: aggregate payout Rs 2.65 crore (247% of pool). Years with aggregate payout above the pool: 6 of 20.
+Fitted-normal stress (200000 simulated years): P(aggregate > pool) = 18.0% | 99th pct Rs 2.65 crore | 99.5th pct Rs 2.65 crore
+Extra capital or reinsurance needed to cover the 99th percentile year: Rs 1.57 crore
+Every customer is paid by the same weather, so there is no diversification inside one pincode area.
+  saved figure: fig_task4_A_spatial.png
+  saved figure: fig_task4_B_nonweather.png
+  saved figure: fig_task4_C_aggregate.png
+
+Task 4 outputs saved.

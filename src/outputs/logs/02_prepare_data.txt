@@ -1,0 +1,40 @@
+
+========================================================================
+STEP 2: PREPARE DATA
+========================================================================
+Files read. Grid cells found: 4 -> ['23.1N_72.5E', '23.1N_72.6E', '23.0N_72.5E', '23.0N_72.6E']
+  Accumulation check (Jan 2005 hourly vs daily file):
+    23:00 value = 16954744 J/m2, 00:00 value = 16954744 J/m2, next 01:00 value = 0 J/m2
+    00:00 equals daily-file value: True | rises to 00:00: True | resets after 00:00: True
+    RESULT: PASS - the 00:00 UTC value is the previous day's total.
+Pincode 380006 point: 23.026N, 72.562E | cell lats [23.0, 23.1] | cell lons [72.5, 72.6] | point inside cell box: True
+
+Daily rows: 7305 (expected 7305)
+Mean daily GHI: 5.32 kWh/m2/day | mean annual GHI: 1943 kWh/m2/year
+Annual rain (mean): 875 mm
+
+Annual index table (kWh/m2/year):
+      index_kwh_m2  rain_mm_total  n_days
+year                                     
+2005        1986.0         1087.4     365
+2006        1934.4         1661.7     365
+2007        1963.2         1152.5     365
+2008        1943.7          812.2     366
+2009        2011.5          601.7     365
+2010        1950.9         1134.6     365
+2011        1908.2          891.1     365
+2012        1968.7          622.2     366
+2013        1893.9          935.8     365
+2014        1980.7          707.7     365
+2015        1970.6          646.4     365
+2016        1910.9          741.2     366
+2017        1950.1         1391.9     365
+2018        1944.6          391.2     365
+2019        1888.3         1057.2     365
+2020        1952.3          783.6     366
+2021        1898.2          725.4     365
+2022        1975.5          562.6     365
+2023        1920.8          810.4     365
+2024        1907.2          791.8     366
+
+Saved: outputs/daily.csv, daily_ghi_by_cell.csv, annual_index.csv, data_summary.json

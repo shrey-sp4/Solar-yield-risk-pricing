@@ -5,7 +5,7 @@ Edit values HERE only. All other scripts read from this file.
 from pathlib import Path
 
 # ---------------------------------------------------------------- paths
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 OUT_DIR = ROOT / "outputs"
 FIG_DIR = ROOT / "figures"

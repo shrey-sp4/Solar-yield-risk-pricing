@@ -11,7 +11,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).parent.parent
 try:
     import config as cfg
 except Exception:

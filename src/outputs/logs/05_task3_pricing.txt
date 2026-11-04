@@ -1,0 +1,60 @@
+
+========================================================================
+STEP 5 (TASK 3): BACK-TEST AND PRICING
+========================================================================
+Back-test (Rs):
+      index_kwh_m2  index_pct_of_mean  proxy_generation_kwh  modelled_savings_loss_rs  payout_rs  payout_pct_of_cap
+year                                                                                                               
+2005        1986.0              102.2                4701.8                       0.0        0.0                0.0
+2006        1934.4               99.6                4579.7                     116.6        0.0                0.0
+2007        1963.2              101.0                4647.9                       0.0        0.0                0.0
+2008        1943.7              100.0                4601.7                       0.0        0.0                0.0
+2009        2011.5              103.5                4762.1                       0.0        0.0                0.0
+2010        1950.9              100.4                4618.7                       0.0        0.0                0.0
+2011        1908.2               98.2                4517.6                     473.7     1359.5               51.4
+2012        1968.7              101.3                4660.7                       0.0        0.0                0.0
+2013        1893.9               97.5                4483.9                     667.7     2620.1               99.1
+2014        1980.7              101.9                4689.3                       0.0        0.0                0.0
+2015        1970.6              101.4                4665.3                       0.0        0.0                0.0
+2016        1910.9               98.3                4524.1                     436.5     1118.0               42.3
+2017        1950.1              100.4                4616.8                       0.0        0.0                0.0
+2018        1944.6              100.1                4603.8                       0.0        0.0                0.0
+2019        1888.3               97.2                4470.6                     744.2     2645.0              100.0
+2020        1952.3              100.5                4622.1                       0.0        0.0                0.0
+2021        1898.2               97.7                4494.0                     609.6     2242.6               84.8
+2022        1975.5              101.7                4677.1                       0.0        0.0                0.0
+2023        1920.8               98.9                4547.5                     301.6      241.0                9.1
+2024        1907.2               98.2                4515.3                     486.8     1444.7               54.6
+
+Burn cost (mean annual payout): Rs 583.56 | std dev: Rs 954.86 | max: Rs 2645.00
+Payout frequency: 7 of 20 years (35%) | years at maximum payout: 1
+Average payout in years that pay: Rs 1667.30
+
+Cross-checks on the burn cost (Rs/year):
+                                   method  burn_cost_rs  premium_at_target_loss_ratio_rs
+          Historical back-test (20 years)         583.6                            897.8
+         Bootstrap mean (resampled years)         585.7                            901.0
+                 Bootstrap 5th percentile         264.1                            406.3
+                Bootstrap 95th percentile         945.7                           1454.9
+Fitted normal distribution (200000 draws)         438.6                            674.8
+Fitted-normal probability of paying in a year: 28.6% (historical frequency 35%)
+Trend-adjusted burn cost (history shifted to 2024 level; trend -2.36 kWh/m2/yr, p=0.076): Rs 994.50
+
+PREMIUM (basis: historical back-test, Rs 583.56):
+  Method 1, burn cost / target loss ratio 0.65 : Rs 897.78
+  Method 2, burn cost + 0.50 x std dev of payout: Rs 1060.99
+  Recommended (higher of the two, rounded up) : Rs 1070 per year
+  = 4.05% of annual savings (Rs 26450) | 0.43% of installation cost | rate on line 40.45% of max payout
+  Expected loss ratio at this premium: 54.5%
+
+Sensitivity to the trigger level (exit rule and cap unchanged):
+ trigger_pct_of_mean  trigger   exit  years_paying  burn_cost_rs  std_rs  recommended_premium_rs note
+                0.90   1748.7 1729.3             0           0.0     0.0                     0.0     
+                0.93   1807.0 1787.6             0           0.0     0.0                     0.0     
+                0.95   1845.8 1826.4             0           0.0     0.0                     0.0     
+                0.97   1884.7 1865.3             0           0.0     0.0                     0.0     
+                1.00   1943.0 1893.7             8         741.3  1036.8                  1260.0     
+  saved figure: fig_task3_backtest.png
+  saved figure: fig_task3_bootstrap.png
+
+Task 3 outputs saved.

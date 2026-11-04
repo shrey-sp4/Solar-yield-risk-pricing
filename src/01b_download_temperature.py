@@ -4,7 +4,7 @@ from pathlib import Path
 import cdsapi
 import xarray as xr
 
-DATA = Path(__file__).parent / "data"
+DATA = Path(__file__).parent.parent / "data"
 DATA.mkdir(exist_ok=True)
 AREA = [23.13, 72.46, 22.93, 72.66]          # N, W, S, E (same box as the irradiance download)
 BLOCKS = [(2005, 2009), (2010, 2014), (2015, 2019), (2020, 2024)]
