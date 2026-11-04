@@ -6,11 +6,11 @@ If a year turns out less sunny than normal, a solar owner earns less electricity
 
 ---
 
-## The idea in 30 seconds
+## The idea:
 
 **Parametric insurance** pays on a measured number, not on a claim you have to prove. Think of a flight-delay cover: if the flight is more than 3 hours late, you are paid, with no paperwork about what you lost.
 
-Here, the measured number is the **total sunlight received in a year** (kWh per square metre). If it drops below a set **trigger**, the owner gets paid. The worse the year, the larger the payout, up to a **maximum**.
+Here in this problem, the measured number is the **total sunlight received in a year** (kWh per square metre). If it drops below a set **trigger**, the owner gets paid. The worse the year, the larger the payout, up to a **maximum**.
 
 **The example system**
 | | |
@@ -41,15 +41,15 @@ Here, the measured number is the **total sunlight received in a year** (kWh per 
 
 ## What the data showed
 
-Sunlight in Ahmedabad is very stable from year to year. The yearly total moves by only about **1.8%** around its average of 1,943 kWh/m².
+Sunlight in Ahmedabad is very stable from year to year. The yearly total moves by only about **1.77%** around its average of 1,943 kWh/m².
 
 ![Annual sunlight](figures/fig_task1_annual_index.png)
 
-Most of the year-to-year change comes from the **monsoon months (June to September)**, which explain about 70% of the variation.
+Most of the year-to-year change comes from the **monsoon months (June to September)**, which explain ~70% of the variation.
 
 ![Variation by month](figures/fig_task1_variance_by_month.png)
 
-**Design lesson.** My first design used a 95% trigger and a large payout. On real data it would have paid in **0 of 20 years**, because 95% is far below anything the area normally sees. I moved the trigger to 99% and cut the maximum payout, which gives a contract that pays about one year in three at a price of about 4% of savings.
+**Design lesson.** My first design used a 95% trigger and a large payout. But the problem was that on real data it would have paid in **0 of 20 years**, because 95% is far below anything the area normally sees. I moved the trigger to 99% and cut the maximum payout, which gives a contract that pays about one year in three at a price of about 4% of savings.
 
 ---
 
