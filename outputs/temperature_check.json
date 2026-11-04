@@ -1,0 +1,11 @@
+{
+  "mean_midday_temp_c": 31.35443687438965,
+  "temp_std_c": 0.4676959216594696,
+  "trend_c_per_decade": 0.08930011261674935,
+  "corr_irradiance_temp": 0.37590168835972326,
+  "base_coef_pct_per_c": -0.4,
+  "max_abs_yearly_diff_pct": 0.39753025587533164,
+  "base_premium_rs": 1070,
+  "premium_with_temp_rs": 1180.0,
+  "decision_changes_years": 0
+}

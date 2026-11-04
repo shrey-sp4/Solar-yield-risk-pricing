@@ -1,0 +1,5 @@
+sigma_pct,miss_rate_pct,false_payout_rate_pct,avg_customers_uncovered_per_year,worst_year_customers_uncovered,avg_customers_material_loss_per_year
+1.0,0.0,99.69571428571429,0.0,0,10.65
+2.0,7.222537341652487,92.99,19.1,100,264.45
+3.0,24.536443935001014,84.01142857142857,181.95,609,741.55
+5.0,44.693253304091876,72.61999999999999,774.4,1747,1732.7

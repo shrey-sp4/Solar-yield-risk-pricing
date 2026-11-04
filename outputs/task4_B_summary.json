@@ -1,0 +1,11 @@
+{
+  "customers_hit_per_year": 493.15,
+  "avg_nonweather_loss_per_hit_customer_rs": 6305.464980078386,
+  "total_nonweather_loss_per_year_rs": 3109540.054925657,
+  "nonweather_share_of_total_loss_pct": 52.448696135074925,
+  "premium_pool_rs": 10700000.0,
+  "expected_payout_pool_rs": 5835551.283054472,
+  "miss_rate_with_nonweather_pct": 44.81347289318304,
+  "miss_rate_weather_only_pct": 7.222537341652487,
+  "nonweather_loss_over_premium_pool": 0.29061122008650997
+}

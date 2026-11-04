@@ -1,0 +1,25 @@
+{
+  "annual_index_mean": 1942.9943191805553,
+  "annual_index_std": 34.43797623176164,
+  "annual_index_cv_pct": 1.7724177519101354,
+  "percentiles": {
+    "p5": 1893.665700894097,
+    "p10": 1897.7874900104168,
+    "p20": 1908.003873555556,
+    "p25": 1910.243769826389,
+    "p50": 1947.3402197916666
+  },
+  "shapiro_p": 0.636276177585688,
+  "trend_pct_per_decade": -1.2170073973655775,
+  "trend_p_value": 0.07552767724638591,
+  "monsoon_variance_share_pct": 69.45449758852519,
+  "corr_daily_raw": -0.4292389174274575,
+  "corr_daily_anomaly_pearson": -0.462782858867631,
+  "corr_daily_anomaly_spearman": -0.4932628418164473,
+  "corr_monthly_anomaly": -0.531095155381982,
+  "corr_annual": -0.17258810214087913,
+  "corr_annual_p": 0.4668419048029415,
+  "implied_specific_yield": 1533.3333333333333,
+  "implied_required_ghi": 1916.6666666666663,
+  "era5_over_required": 1.0137361665289855
+}

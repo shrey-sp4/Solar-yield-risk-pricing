@@ -1,0 +1,11 @@
+{
+  "cells": [
+    "23.1N_72.5E",
+    "23.1N_72.6E",
+    "23.0N_72.5E",
+    "23.0N_72.6E"
+  ],
+  "n_days": 7305,
+  "mean_annual_index_kwh_m2": 1942.9943191805553,
+  "point_inside_cell_box": true
+}

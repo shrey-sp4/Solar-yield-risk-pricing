@@ -1,0 +1,6 @@
+method,burn_cost_rs,premium_at_target_loss_ratio_rs
+Historical back-test (20 years),583.5551283054472,897.7771204699187
+Bootstrap mean (resampled years),585.6549367596294,901.0075950148145
+Bootstrap 5th percentile,264.09177989734445,406.2950459959145
+Bootstrap 95th percentile,945.6622103227759,1454.8649389581167
+Fitted normal distribution (200000 draws),438.61209355536283,674.7878362390197

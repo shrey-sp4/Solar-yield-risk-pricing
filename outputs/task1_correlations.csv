@@ -1,0 +1,7 @@
+pair: GHI vs rainfall,correlation,p_value
+"daily, raw (includes seasonal cycle)",-0.4292389174274575,
+"daily anomalies (seasonality removed), Pearson",-0.462782858867631,
+"daily anomalies (seasonality removed), Spearman",-0.4932628418164473,
+"monthly anomalies, Pearson",-0.531095155381982,
+"annual GHI vs annual rain (n=20), Pearson",-0.17258810214087913,0.4668419048029415
+"monsoon GHI vs monsoon rain (n=20), Pearson",-0.19655031363749692,0.4062286399708085

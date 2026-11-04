@@ -1,0 +1,21 @@
+{
+  "mean_index": 1942.9943191805553,
+  "trigger": 1923.5643759887498,
+  "exit_percentile_value": 1893.665700894097,
+  "exit": 1893.665700894097,
+  "fallback_used": false,
+  "cap": 2645.0,
+  "tick_rs_per_kwh_m2": 88.46545847354415,
+  "pincode": 380006,
+  "lat": 23.026,
+  "lon": 72.562,
+  "index_definition": "Annual (1 Jan-31 Dec) sum of ERA5-Land surface solar radiation downwards, kWh/m2, mean of surrounding grid cells",
+  "trigger_pct_of_mean": 0.99,
+  "exit_percentile": 5,
+  "cap_pct_of_savings": 0.1,
+  "annual_savings_p50_rs": 26450.0,
+  "modelled_loss_at_trigger_rs": 264.5000000000002,
+  "modelled_loss_at_exit_rs": 671.5109461704892,
+  "cap_over_loss_at_exit": 3.9388784577287645,
+  "years_with_payout": 7
+}

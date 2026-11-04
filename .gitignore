@@ -1,0 +1,10 @@
+﻿__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+zip_check/
+*.zip
+.cdsapirc
+*.part
+prompts/
+report/

@@ -1,0 +1,13 @@
+{
+  "premium_pool_rs": 10700000.0,
+  "max_exposure_rs": 26450000.0,
+  "max_exposure_over_pool": 2.47196261682243,
+  "worst_historical_year": 2019,
+  "worst_historical_aggregate_rs": 26450000.0,
+  "years_aggregate_above_pool": 6,
+  "sim_prob_aggregate_above_pool_pct": 18.021,
+  "sim_var99_rs": 26450000.0,
+  "sim_var995_rs": 26450000.0,
+  "sim_tvar99_rs": 26450000.0,
+  "capital_buffer_for_var99_rs": 15750000.0
+}
