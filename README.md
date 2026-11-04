@@ -6,7 +6,7 @@ If a year turns out less sunny than normal, a solar owner earns less electricity
 
 ---
 
-## The idea:
+## The idea
 
 **Parametric insurance** pays on a measured number, not on a claim you have to prove. Think of a flight-delay cover: if the flight is more than 3 hours late, you are paid, with no paperwork about what you lost.
 
